@@ -24,12 +24,15 @@ using namespace std;
     return self;
 }
 
--(void)train:(std::vector<cv::Mat> &)face{
+-(void)train:(std::vector<cv::Mat> &)face andName:(NSString*)name{
     NSLog(@"학습 시작");
-    vector<int> label(face.size(), newLabel++);
-    if(newLabel==1)
-        model->train(face, label);
+    
+    
+    vector<int> label(face.size(), newLabel);
+    if(newLabel==0) model->train(face, label);
     else model->update(face, label);
+    model->setLabelInfo(newLabel++,[name UTF8String]);
+    
     face.clear();
     NSLog(@"학습 끝");
 }
@@ -42,7 +45,8 @@ using namespace std;
     int predicted_label;
     double predicted_confidence;
     model->predict(face, predicted_label, predicted_confidence);
-    NSLog(@"%d",predicted_label);
+    
+    NSLog(@"%d %s",predicted_label,model->getLabelInfo(predicted_label).c_str());
 }
 
 @end

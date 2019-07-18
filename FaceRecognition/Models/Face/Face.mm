@@ -98,8 +98,8 @@ using namespace std;
     cvtColor(image_copy(faceRect[0]), faceMat, COLOR_RGB2GRAY);
     [faceRecognizer predict:faceMat];
 }
--(void)train:(vector<cv::Mat> &)trainData{
-    [faceRecognizer train:trainData];
+-(void)train:(vector<cv::Mat> &)trainData andName:(NSString*)name{
+    [faceRecognizer train:trainData andName:name];
 }
 
 

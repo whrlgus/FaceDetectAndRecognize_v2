@@ -37,7 +37,7 @@
 		4CBE26E322CF4C8600144F72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CBE26EA22CF4CD200144F72 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4CBE26EC22CF4CEA00144F72 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		4CBE26F122CF4E3D00144F72 /* FaceRecognition-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FaceRecognition-Bridging-Header.h"; sourceTree = "<group>"; };
+		4CBE26F122CF4E3D00144F72 /* FaceRecognition-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = "FaceRecognition-Bridging-Header.h"; sourceTree = "<group>"; };
 		4CBE26F222CF4E3E00144F72 /* OpencvWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpencvWrapper.h; sourceTree = "<group>"; };
 		4CBE26F322CF4E3E00144F72 /* OpencvWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpencvWrapper.mm; sourceTree = "<group>"; };
 		4CBE26F522CF4E6E00144F72 /* VideoCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCamera.h; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		4CBE270822D087D000144F72 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		4CBE270E22D1A21D00144F72 /* Face.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Face.h; sourceTree = "<group>"; };
 		4CBE270F22D1A21D00144F72 /* Face.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Face.mm; sourceTree = "<group>"; };
-		4CBE271122D1A24C00144F72 /* Train.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Train.h; sourceTree = "<group>"; };
+		4CBE271122D1A24C00144F72 /* Train.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = Train.h; sourceTree = "<group>"; };
 		4CBE271222D1A24C00144F72 /* Train.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Train.mm; sourceTree = "<group>"; };
 		4CBE271422D1A26100144F72 /* Predict.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Predict.h; sourceTree = "<group>"; };
 		4CBE271522D1A26100144F72 /* Predict.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Predict.mm; sourceTree = "<group>"; };

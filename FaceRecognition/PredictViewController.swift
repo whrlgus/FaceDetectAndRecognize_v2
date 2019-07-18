@@ -16,8 +16,8 @@ class PredictViewController: UIViewController,TrainViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        predict = Predict(viewController: self, andImageView: imageView, andSubImageView: imageView)
         
+        predict = Predict(viewController: self, andImageView: imageView, andSubImageView: imageView)
     }
     
     func viewControllerDismissed() {

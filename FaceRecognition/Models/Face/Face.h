@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)setParentView:(UIView *)parentView;
 
 -(void)predict;
--(void)train:(std::vector<cv::Mat>&)trainData;
+-(void)train:(std::vector<cv::Mat>&)trainData andName:(NSString*)name;
 @end
 
 NS_ASSUME_NONNULL_END

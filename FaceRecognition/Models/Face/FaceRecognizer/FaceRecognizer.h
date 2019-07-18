@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FaceRecognizer : NSObject
 -(instancetype)init;
--(void)train:(std::vector<cv::Mat>&)face;
+-(void)train:(std::vector<cv::Mat>&)face andName:(NSString*)name;
 -(void)predict:(cv::Mat &)face;
 @end
 
