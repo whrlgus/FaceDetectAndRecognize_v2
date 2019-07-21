@@ -14,7 +14,6 @@
 		4CBE26E222CF4C8600144F72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBE26E022CF4C8600144F72 /* LaunchScreen.storyboard */; };
 		4CBE26EB22CF4CD200144F72 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBE26EA22CF4CD200144F72 /* AVFoundation.framework */; };
 		4CBE26ED22CF4CEA00144F72 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBE26EC22CF4CEA00144F72 /* CoreMedia.framework */; };
-		4CBE26F422CF4E3E00144F72 /* OpencvWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4CBE26F322CF4E3E00144F72 /* OpencvWrapper.mm */; };
 		4CBE26F722CF4E6F00144F72 /* VideoCamera.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4CBE26F622CF4E6F00144F72 /* VideoCamera.mm */; };
 		4CBE26FD22CF71F900144F72 /* FaceDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4CBE26FC22CF71F900144F72 /* FaceDetector.mm */; };
 		4CBE270222CF74D400144F72 /* haarcascade_eye.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4CBE270022CF74D400144F72 /* haarcascade_eye.xml */; };
@@ -38,8 +37,6 @@
 		4CBE26EA22CF4CD200144F72 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4CBE26EC22CF4CEA00144F72 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		4CBE26F122CF4E3D00144F72 /* FaceRecognition-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = "FaceRecognition-Bridging-Header.h"; sourceTree = "<group>"; };
-		4CBE26F222CF4E3E00144F72 /* OpencvWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpencvWrapper.h; sourceTree = "<group>"; };
-		4CBE26F322CF4E3E00144F72 /* OpencvWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpencvWrapper.mm; sourceTree = "<group>"; };
 		4CBE26F522CF4E6E00144F72 /* VideoCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCamera.h; sourceTree = "<group>"; };
 		4CBE26F622CF4E6F00144F72 /* VideoCamera.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoCamera.mm; sourceTree = "<group>"; };
 		4CBE26FB22CF71F900144F72 /* FaceDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceDetector.h; sourceTree = "<group>"; };
@@ -93,13 +90,11 @@
 		4CBE26D622CF4C8500144F72 /* FaceRecognition */ = {
 			isa = PBXGroup;
 			children = (
+				4CBE274522E43D7100144F72 /* Storyboards */,
+				4CBE274422E43D2500144F72 /* ViewControllers */,
 				4CBE26F022CF4D2100144F72 /* Models */,
 				4CBE26D722CF4C8500144F72 /* AppDelegate.swift */,
-				4CBE26D922CF4C8500144F72 /* TrainViewController.swift */,
-				4CBE271E22D207FB00144F72 /* PredictViewController.swift */,
-				4CBE26DB22CF4C8500144F72 /* Main.storyboard */,
 				4CBE26DE22CF4C8600144F72 /* Assets.xcassets */,
-				4CBE26E022CF4C8600144F72 /* LaunchScreen.storyboard */,
 				4CBE26E322CF4C8600144F72 /* Info.plist */,
 			);
 			path = FaceRecognition;
@@ -121,19 +116,9 @@
 				4CBE270D22D1A20A00144F72 /* Predict */,
 				4CBE270C22D1A20200144F72 /* Train */,
 				4CBE270B22D1A1F600144F72 /* Face */,
-				4CBE26F822CF4E8300144F72 /* OpencvWrapper */,
 				4CBE26F122CF4E3D00144F72 /* FaceRecognition-Bridging-Header.h */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		4CBE26F822CF4E8300144F72 /* OpencvWrapper */ = {
-			isa = PBXGroup;
-			children = (
-				4CBE26F222CF4E3E00144F72 /* OpencvWrapper.h */,
-				4CBE26F322CF4E3E00144F72 /* OpencvWrapper.mm */,
-			);
-			path = OpencvWrapper;
 			sourceTree = "<group>";
 		};
 		4CBE26F922CF4E9C00144F72 /* VideoCamera */ = {
@@ -200,6 +185,24 @@
 				4CBE271522D1A26100144F72 /* Predict.mm */,
 			);
 			path = Predict;
+			sourceTree = "<group>";
+		};
+		4CBE274422E43D2500144F72 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4CBE26D922CF4C8500144F72 /* TrainViewController.swift */,
+				4CBE271E22D207FB00144F72 /* PredictViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4CBE274522E43D7100144F72 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4CBE26DB22CF4C8500144F72 /* Main.storyboard */,
+				4CBE26E022CF4C8600144F72 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +285,6 @@
 				4CBE270622D085BF00144F72 /* FaceRecognizer.mm in Sources */,
 				4CBE271622D1A26100144F72 /* Predict.mm in Sources */,
 				4CBE26F722CF4E6F00144F72 /* VideoCamera.mm in Sources */,
-				4CBE26F422CF4E3E00144F72 /* OpencvWrapper.mm in Sources */,
 				4CBE26DA22CF4C8500144F72 /* TrainViewController.swift in Sources */,
 				4CBE271022D1A21D00144F72 /* Face.mm in Sources */,
 				4CBE26D822CF4C8500144F72 /* AppDelegate.swift in Sources */,
